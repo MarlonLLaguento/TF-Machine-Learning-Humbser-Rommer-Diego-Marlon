@@ -62,3 +62,4 @@ En la siguiente imagen se puede apreciar un soporte para la impresión generado 
 
 Una vez preparado el modelo, se procede a exportarlo en formato .gcode, que es el utilizado para la impresión 3D en las máquinas de la UPC.
 
+![foto UPC]https://cdn.discordapp.com/attachments/1159637113541759146/1177729941383680120/IMG_0097_3.jpg?ex=6573917b&is=65611c7b&hm=b25d688b3e1b3b39c170f3a75494aae95b0619bcba5d8e3501fe4f9a75331da5&
