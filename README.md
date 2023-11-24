@@ -74,3 +74,73 @@ Una vez preparado el modelo, se procede a exportarlo en formato .gcode, que es e
 ![foto UPC](https://cdn.discordapp.com/attachments/1159637113541759146/1177729941383680120/IMG_0097_3.jpg?ex=6573917b&is=65611c7b&hm=b25d688b3e1b3b39c170f3a75494aae95b0619bcba5d8e3501fe4f9a75331da5&)
 
 # Tarea Académica 4: Desarrollo Integral de GAN para la Transformación de Modelos 3D
+
+## Metodología:
+
+![Diagrama_Metodologia](https://cdn.discordapp.com/attachments/1159637113541759146/1177738528831053955/daWZeAxnJ.png?ex=6573997a&is=6561247a&hm=5eeebe0d0c40aa9fd908a47e481377af72cc2564d45ef449e46dc396b3326433&)
+
+## Composición de la GAN
+La GAN se compone de dos bloques principales que son redes neuronales: el generador y el discriminador.
+
+## Función del Generador
+El generador tiene la tarea de "generar" objetos en formato STL que intentan replicar la forma de una cama.
+
+## Evaluación por el Discriminador
+Una vez que el generador crea un objeto, entra en juego el discriminador. Su función es determinar si el objeto generado es una cama o no.
+
+## Retroalimentación y Ajuste del Generador
+Si el discriminador decide que el objeto no es una cama, el generador actualiza sus pesos (ajusta su modelo interno) y vuelve a crear un objeto. Este proceso de retroalimentación se repite, con el generador intentando mejorar su capacidad de crear objetos que parezcan camas.
+
+## Entrenamiento del Discriminador
+Paralelamente, el discriminador se entrena con datos de un dataset. Este entrenamiento le permite mejorar su habilidad para calificar correctamente el trabajo del generador.
+
+## Conclusión del Entrenamiento
+El proceso de entrenamiento se considera completo cuando el generador crea objetos que el discriminador consistentemente califica como camas. En este punto, el generador está adecuadamente entrenado para crear objetos que se asemejan mucho o son idénticos a una cama.
+
+## Pseudocódigo:
+
+```python
+class Generador:
+    def __init__(self):
+        # Inicializar parámetros del generador
+
+    def generar_objeto(self):
+        # Generar un objeto en formato STL simulando una cama
+        return objeto
+
+    def actualizar_pesos(self, feedback):
+        # Actualizar los pesos del modelo basado en el feedback del discriminador
+
+class Discriminador:
+    def __init__(self, dataset):
+        # Inicializar parámetros del discriminador
+        self.dataset = dataset
+
+    def entrenar(self):
+        # Entrenar el discriminador con el dataset
+
+    def evaluar(self, objeto):
+        # Evaluar si el objeto generado por el generador es una cama
+        return es_cama
+
+# Inicialización
+generador = Generador()
+discriminador = Discriminador(dataset)
+
+# Proceso de entrenamiento
+entrenamiento_completo = False
+while not entrenamiento_completo:
+    objeto = generador.generar_objeto()
+    es_cama = discriminador.evaluar(objeto)
+
+    if not es_cama:
+        generador.actualizar_pesos(feedback="mejorar")
+    
+    discriminador.entrenar()
+
+    # Criterio para determinar si el entrenamiento está completo
+    if criterio_de_finalizacion_cumplido:
+        entrenamiento_completo = True
+
+# El generador ahora está entrenado para crear objetos que parecen camas
+
