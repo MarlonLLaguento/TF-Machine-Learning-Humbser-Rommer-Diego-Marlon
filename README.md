@@ -49,3 +49,16 @@ La transformación y procesamiento de modelos 3D comienza con modelos en formato
 A continuación, los BinVoxels se utilizan como entrada para una Red Generativa Antagónica (GAN), que procesa los datos y genera un nuevo modelo 3D en formato Bin Voxels. Este nuevo modelo generado se convierte finalmente al formato .STL, que es un estándar comúnmente utilizado para la impresión 3D y otras aplicaciones de modelado 3D.
 
 ![Vizualización del stl](https://cdn.discordapp.com/attachments/1159637113541759146/1177720245608267806/bed_0001_0.5_-0.5_0_3.png?ex=65738873&is=65611373&hm=382008d12db50d9675c04b8dfa49d0c91a2cf0725c42332a6123e6dc6d98de93&)
+
+# Impresión 3D
+
+El software utilizado para la impresión y visualización del resultado en formato .stl es PrusaSlicer 2.7.0. A continuación, se presentan imágenes que muestran el proceso y el resultado final:
+
+![Bed.stl](https://cdn.discordapp.com/attachments/1159637113541759146/1177725721519591556/image.png?ex=65738d8d&is=6561188d&hm=4d80a46dca56054fae3a1771c064bedbbcbcdc6bd393eaed010d7eab87413998&)
+
+En la siguiente imagen se puede apreciar un soporte para la impresión generado por el mismo software:
+
+![3d model with supports](https://cdn.discordapp.com/attachments/1159637113541759146/1177726994859962388/image.png?ex=65738ebc&is=656119bc&hm=3da52e78c7ee0d25172e8163f393943c146f32d8e4588da65df030fa9a0d6a39&)
+
+Una vez preparado el modelo, se procede a exportarlo en formato .gcode, que es el utilizado para la impresión 3D en las máquinas de la UPC.
+
