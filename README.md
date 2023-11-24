@@ -9,6 +9,15 @@
 
 # Tarea Académica 3: Desarrollo Integral de GAN para la Transformación de Modelos 3D
 
+# Introducción
+
+La transición de diseños digitales a objetos físicos mediante la impresión 3D es un proceso que combina precisión técnica con creatividad. Comienza con la elección de modelos tridimensionales, como camas en el formato .OFF, un estándar para geometrías 3D detalladas. Estos modelos son transformados en BinVoxels, una representación voxelizada que optimiza la manipulación de los datos en tres dimensiones.
+
+Mediante la implementación de Redes Generativas Antagónicas (GAN), tecnologías de aprendizaje profundo avanzadas, se procesan y generan nuevos modelos en Bin Voxels. Este proceso permite la creación de variantes estructuradas y refinadas de los modelos originales, demostrando las capacidades predictivas y creativas de la GAN.
+
+El último paso es convertir estos modelos generados en formato .STL, esencial para la impresión 3D. Este formato permite una transferencia precisa de los modelos digitales a la impresora 3D, culminando así el proceso de diseño y fabricación digital. La metodología establece una fusión entre el modelado avanzado y la manufactura aditiva, una verdadera representación de cómo los conceptos se materializan en el mundo real.
+
+
 ## Configuración del Entorno de Entrenamiento
 
 ### Repositorio:
