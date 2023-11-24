@@ -39,7 +39,7 @@ El último paso es convertir estos modelos generados en formato .STL, esencial p
   - Establecer hitos que indiquen progresos importantes como la adquisición de datos, conversión de datos, y fases iniciales de entrenamiento y prueba de la GAN.
 
 - **Búsqueda y Adquisición de Dataset**
-  - Descargar ModelNet10, enfocándose en modelos 3D de camas en formato .off.
+  - Descargar [ModelNet10](https://vision.princeton.edu/projects/2014/3DShapeNets/ModelNet10.zip), enfocándose en modelos 3D de camas en formato .off.
 
 - **Conversión de Datos**
   - Transformar modelos 3D de camas de .off a Binvoxels, y luego a STL.
