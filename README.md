@@ -40,3 +40,12 @@
   - Desarrollar la arquitectura inicial de la GAN, seleccionando hiperparámetros adecuados.
   - Implementar una pipeline de datos que gestione la entrada/salida de modelos 3D y se encargue del preprocesamiento y normalización de los mismos.
 
+## Metodología
+
+La transformación y procesamiento de modelos 3D comienza con modelos en formato .OFF, específicamente de camas, que representan el punto de partida de nuestro flujo de trabajo. Estos modelos 3D son transformados a un formato intermedio o representación de voxelización conocida como "BinVoxels".
+
+![diagrama del modelo](https://cdn.discordapp.com/attachments/1159637113541759146/1177698207573217341/ditfFBumg.png?ex=657373ed&is=6560feed&hm=34de3fbebdc0412c6828b66c2e16a1daab1f50b30790425c72acc220a1bdba57&)
+
+A continuación, los BinVoxels se utilizan como entrada para una Red Generativa Antagónica (GAN), que procesa los datos y genera un nuevo modelo 3D en formato Bin Voxels. Este nuevo modelo generado se convierte finalmente al formato .STL, que es un estándar comúnmente utilizado para la impresión 3D y otras aplicaciones de modelado 3D.
+
+![Vizualización del stl](https://cdn.discordapp.com/attachments/1159637113541759146/1177720245608267806/bed_0001_0.5_-0.5_0_3.png?ex=65738873&is=65611373&hm=382008d12db50d9675c04b8dfa49d0c91a2cf0725c42332a6123e6dc6d98de93&)
