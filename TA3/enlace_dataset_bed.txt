@@ -1,0 +1,1 @@
+Enlace: https://vision.princeton.edu/projects/2014/3DShapeNets/ModelNet10.zip
