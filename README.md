@@ -147,9 +147,12 @@ while not entrenamiento_completo:
 # Milestone final: Trabajo Final
 
 ## Resultados
+![entrenamiento](https://cdn.discordapp.com/attachments/1177509564141273118/1177791229904306227/verificacion_4.jpg?ex=6573ca8f&is=6561558f&hm=4d2028725f308378b52fa2c01e2c479c257d9aa69ce168a9d1eaa961b9a4d778&)
+
+Tras un entrenamiento de 4 horas, el modelo GAN ha logrado generar un objeto con características similares a una cama. El modelo produce un archivo STL, que representa una cama parecida a los ejemplos proporcionados en su dataset entrenado.
 
 ![Resultado final](https://cdn.discordapp.com/attachments/1159637113541759146/1177787298201477241/image.png?ex=6573c6e6&is=656151e6&hm=b35598297851a1dfefa56f9fca2b53fee535c84fcda375ed05c55e833f0f906d&)
 
-Tras un entrenamiento de 4 horas, el modelo GAN ha logrado generar un objeto con características similares a una cama. El modelo produce un archivo STL, que representa una cama parecida a los ejemplos proporcionados en su dataset entrenado.
+
 
 
