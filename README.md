@@ -40,6 +40,8 @@ El último paso es convertir estos modelos generados en formato .STL, esencial p
 
 - **Búsqueda y Adquisición de Dataset**
   - Descargar [ModelNet10](https://vision.princeton.edu/projects/2014/3DShapeNets/ModelNet10.zip), enfocándose en modelos 3D de camas en formato .off.
+    ![dataset STL](https://cdn.discordapp.com/attachments/1159637113541759146/1177792932061904976/image.png?ex=6573cc25&is=65615725&hm=8507e984b540ca98f89340a42f9660167289f7b31df4a53cbd226b545953cb2e&)
+    ![dataset images](https://cdn.discordapp.com/attachments/1159637113541759146/1177793088907907082/image.png?ex=6573cc4a&is=6561574a&hm=3f1b75477442acc30100d37715a98c12b39ca8826eec5f9b0e40a649247964d9&)
 
 - **Conversión de Datos**
   - Transformar modelos 3D de camas de .off a Binvoxels, y luego a STL.
