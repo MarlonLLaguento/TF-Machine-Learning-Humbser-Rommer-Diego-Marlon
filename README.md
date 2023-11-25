@@ -153,6 +153,18 @@ Tras un entrenamiento de 4 horas, el modelo GAN ha logrado generar un objeto con
 
 ![Resultado final](https://cdn.discordapp.com/attachments/1159637113541759146/1177787298201477241/image.png?ex=6573c6e6&is=656151e6&hm=b35598297851a1dfefa56f9fca2b53fee535c84fcda375ed05c55e833f0f906d&)
 
+# Conclusiones
+
+## Resultados del Entrenamiento de la GAN
+Tras el entrenamiento, la Red Generativa Antagónica (GAN) ha demostrado su capacidad para generar un objeto con características notablemente similares a una cama. Este logro se materializa en un archivo STL, que no solo permite una visualización detallada del objeto, sino que también facilita su impresión mediante tecnología 3D. Este avance representa un paso significativo en la aplicación práctica de las GANs, demostrando su potencial en la creación de modelos tridimensionales complejos y detallados.
+
+## Mejora Continua y Limitaciones
+Con cada época de entrenamiento, el modelo GAN perfecciona su habilidad para replicar con mayor precisión la forma de una cama, evidenciando una mejora continua en la parte generadora de la red. Sin embargo, es importante reconocer que los resultados obtenidos, aunque impresionantes, no están exentos de errores, especialmente a nivel geométrico. Estas imperfecciones son un recordatorio de las limitaciones inherentes a la tecnología actual y de los desafíos que aún enfrentamos en el campo de la inteligencia artificial y el aprendizaje automático.
+
+## Consideraciones sobre Recursos y Expectativas
+Un factor crítico en la eficacia de nuestro modelo GAN es la disponibilidad de recursos tecnológicos y de tiempo. Las GANs son conocidas por su alta demanda en términos de capacidad de procesamiento, memoria RAM, almacenamiento y otros componentes de hardware. Además, el tiempo es un recurso esencial, ya que un entrenamiento más prolongado con más capas, neuronas y épocas puede resultar en mejoras significativas en la calidad de los outputs. Dadas estas consideraciones, los resultados obtenidos están en línea con las expectativas y reflejan las realidades actuales en el desarrollo y la aplicación de modelos de aprendizaje profundo.
+
+
 
 
 
