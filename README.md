@@ -7,7 +7,7 @@
 #### - Charapaqui Reluz, Alcides Rommel		u202021294
 #### - Llaguento de la Cruz, Marlon Omar		u20201B055
 
-# Tarea Académica 3: Desarrollo Integral de GAN para la Transformación de Modelos 3D
+# Milestone 4: Tarea Académica 3: Desarrollo Integral de GAN para la Transformación de Modelos 3D
 
 # Introducción
 
@@ -73,7 +73,7 @@ Una vez preparado el modelo, se procede a exportarlo en formato .gcode, que es e
 
 ![foto UPC](https://cdn.discordapp.com/attachments/1159637113541759146/1177729941383680120/IMG_0097_3.jpg?ex=6573917b&is=65611c7b&hm=b25d688b3e1b3b39c170f3a75494aae95b0619bcba5d8e3501fe4f9a75331da5&)
 
-# Tarea Académica 4: Desarrollo Integral de GAN para la Transformación de Modelos 3D
+# Milestone 5: Tarea Académica 4: Desarrollo Integral de GAN para la Transformación de Modelos 3D
 
 ## Metodología:
 
@@ -143,4 +143,16 @@ while not entrenamiento_completo:
         entrenamiento_completo = True
 
 # El generador ahora está entrenado para crear objetos que parecen camas
+```
+# Milestone final: Trabajo Final
+
+## Resultados
+![entrenamiento](https://cdn.discordapp.com/attachments/1177509564141273118/1177791229904306227/verificacion_4.jpg?ex=6573ca8f&is=6561558f&hm=4d2028725f308378b52fa2c01e2c479c257d9aa69ce168a9d1eaa961b9a4d778&)
+
+Tras un entrenamiento de 4 horas, el modelo GAN ha logrado generar un objeto con características similares a una cama. El modelo produce un archivo STL, que representa una cama parecida a los ejemplos proporcionados en su dataset entrenado.
+
+![Resultado final](https://cdn.discordapp.com/attachments/1159637113541759146/1177787298201477241/image.png?ex=6573c6e6&is=656151e6&hm=b35598297851a1dfefa56f9fca2b53fee535c84fcda375ed05c55e833f0f906d&)
+
+
+
 
