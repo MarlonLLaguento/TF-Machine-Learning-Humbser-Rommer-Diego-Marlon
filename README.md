@@ -30,6 +30,7 @@ El último paso es convertir estos modelos generados en formato .STL, esencial p
   - Categorizar issues con etiquetas por urgencia, tipo (bug, mejora, tarea), y asignar responsables.
 - **Definición de Milestones**
   - Establecer milestones para reflejar el progreso cronológico.
+  ![Milestones](https://cdn.discordapp.com/attachments/1159637113541759146/1177821715867369642/image.png?ex=6573e6f3&is=656171f3&hm=479b482765d0855f6c8cef0955c07826f40865e6feccae4171629b51bf8acf12&)
   - Definir fechas específicas y objetivos a corto y largo plazo.
 
 ### Gestión de Tareas
