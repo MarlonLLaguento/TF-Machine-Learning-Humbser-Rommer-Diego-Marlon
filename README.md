@@ -152,3 +152,4 @@ while not entrenamiento_completo:
 
 Tras un entrenamiento de 4 horas, el modelo GAN ha logrado generar un objeto con características similares a una cama. El modelo produce un archivo STL, que representa una cama parecida a los ejemplos proporcionados en su dataset entrenado.
 
+
