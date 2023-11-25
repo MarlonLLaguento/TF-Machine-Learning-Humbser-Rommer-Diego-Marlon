@@ -26,6 +26,7 @@ El último paso es convertir estos modelos generados en formato .STL, esencial p
   - Incluir directorios separados para scripts, datasets, documentación y resultados de entrenamiento.
 - **Gestión con Issues**
   - Asignar tareas detalladas utilizando issues.
+  ![Issues](https://cdn.discordapp.com/attachments/1177509564141273118/1177821559319183370/image.png?ex=6573e6ce&is=656171ce&hm=d2dd6195d2149a639feb19f7615792777a6f389298accdcbb8fcd94751febb4a&)
   - Categorizar issues con etiquetas por urgencia, tipo (bug, mejora, tarea), y asignar responsables.
 - **Definición de Milestones**
   - Establecer milestones para reflejar el progreso cronológico.
