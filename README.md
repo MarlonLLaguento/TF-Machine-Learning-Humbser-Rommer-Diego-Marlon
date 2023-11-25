@@ -1,4 +1,4 @@
-# Informes para el ptoyecto final Machine Learning UPC
+# Informes para el proyecto final Machine Learning UPC
 
 ![Logo UPC](https://th.bing.com/th/id/OIP.uI-98YWzIvsuhXVyKRkv9gHaHk?pid=ImgDet&rs=1)
 
