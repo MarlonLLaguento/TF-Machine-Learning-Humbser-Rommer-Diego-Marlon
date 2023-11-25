@@ -1,4 +1,4 @@
-# Entregables para el ptoyecto final Machine Learning UPC
+# Informes para el ptoyecto final Machine Learning UPC
 
 ![Logo UPC](https://th.bing.com/th/id/OIP.uI-98YWzIvsuhXVyKRkv9gHaHk?pid=ImgDet&rs=1)
 
@@ -8,6 +8,15 @@
 #### - Llaguento de la Cruz, Marlon Omar		u20201B055
 
 # Tarea Académica 3: Desarrollo Integral de GAN para la Transformación de Modelos 3D
+
+# Introducción
+
+La transición de diseños digitales a objetos físicos mediante la impresión 3D es un proceso que combina precisión técnica con creatividad. Comienza con la elección de modelos tridimensionales, como camas en el formato .OFF, un estándar para geometrías 3D detalladas. Estos modelos son transformados en BinVoxels, una representación voxelizada que optimiza la manipulación de los datos en tres dimensiones.
+
+Mediante la implementación de Redes Generativas Antagónicas (GAN), tecnologías de aprendizaje profundo avanzadas, se procesan y generan nuevos modelos en Bin Voxels. Este proceso permite la creación de variantes estructuradas y refinadas de los modelos originales, demostrando las capacidades predictivas y creativas de la GAN.
+
+El último paso es convertir estos modelos generados en formato .STL, esencial para la impresión 3D. Este formato permite una transferencia precisa de los modelos digitales a la impresora 3D, culminando así el proceso de diseño y fabricación digital. La metodología establece una fusión entre el modelado avanzado y la manufactura aditiva, una verdadera representación de cómo los conceptos se materializan en el mundo real.
+
 
 ## Configuración del Entorno de Entrenamiento
 
@@ -30,7 +39,7 @@
   - Establecer hitos que indiquen progresos importantes como la adquisición de datos, conversión de datos, y fases iniciales de entrenamiento y prueba de la GAN.
 
 - **Búsqueda y Adquisición de Dataset**
-  - Descargar ModelNet10, enfocándose en modelos 3D de camas en formato .off.
+  - Descargar [ModelNet10](https://vision.princeton.edu/projects/2014/3DShapeNets/ModelNet10.zip), enfocándose en modelos 3D de camas en formato .off.
 
 - **Conversión de Datos**
   - Transformar modelos 3D de camas de .off a Binvoxels, y luego a STL.
@@ -39,4 +48,99 @@
   - Crear una primera versión de la GAN que utilice datos STL para generar nuevos modelos 3D de camas.
   - Desarrollar la arquitectura inicial de la GAN, seleccionando hiperparámetros adecuados.
   - Implementar una pipeline de datos que gestione la entrada/salida de modelos 3D y se encargue del preprocesamiento y normalización de los mismos.
+
+## Metodología
+
+La transformación y procesamiento de modelos 3D comienza con modelos en formato .OFF, específicamente de camas, que representan el punto de partida de nuestro flujo de trabajo. Estos modelos 3D son transformados a un formato intermedio o representación de voxelización conocida como "BinVoxels".
+
+![diagrama del modelo](https://cdn.discordapp.com/attachments/1159637113541759146/1177698207573217341/ditfFBumg.png?ex=657373ed&is=6560feed&hm=34de3fbebdc0412c6828b66c2e16a1daab1f50b30790425c72acc220a1bdba57&)
+
+A continuación, los BinVoxels se utilizan como entrada para una Red Generativa Antagónica (GAN), que procesa los datos y genera un nuevo modelo 3D en formato Bin Voxels. Este nuevo modelo generado se convierte finalmente al formato .STL, que es un estándar comúnmente utilizado para la impresión 3D y otras aplicaciones de modelado 3D.
+
+![Vizualización del stl](https://cdn.discordapp.com/attachments/1159637113541759146/1177720245608267806/bed_0001_0.5_-0.5_0_3.png?ex=65738873&is=65611373&hm=382008d12db50d9675c04b8dfa49d0c91a2cf0725c42332a6123e6dc6d98de93&)
+
+# Impresión 3D
+
+El software utilizado para la impresión y visualización del resultado en formato .stl es PrusaSlicer 2.7.0. A continuación, se presentan imágenes que muestran el proceso y el resultado final:
+
+![Bed.stl](https://cdn.discordapp.com/attachments/1159637113541759146/1177725721519591556/image.png?ex=65738d8d&is=6561188d&hm=4d80a46dca56054fae3a1771c064bedbbcbcdc6bd393eaed010d7eab87413998&)
+
+En la siguiente imagen se puede apreciar un soporte para la impresión generado por el mismo software:
+
+![3d model with supports](https://cdn.discordapp.com/attachments/1159637113541759146/1177726994859962388/image.png?ex=65738ebc&is=656119bc&hm=3da52e78c7ee0d25172e8163f393943c146f32d8e4588da65df030fa9a0d6a39&)
+
+Una vez preparado el modelo, se procede a exportarlo en formato .gcode, que es el utilizado para la impresión 3D en las máquinas de la UPC.
+
+![foto UPC](https://cdn.discordapp.com/attachments/1159637113541759146/1177729941383680120/IMG_0097_3.jpg?ex=6573917b&is=65611c7b&hm=b25d688b3e1b3b39c170f3a75494aae95b0619bcba5d8e3501fe4f9a75331da5&)
+
+# Tarea Académica 4: Desarrollo Integral de GAN para la Transformación de Modelos 3D
+
+## Metodología:
+
+![Diagrama_Metodologia](https://cdn.discordapp.com/attachments/1159637113541759146/1177738528831053955/daWZeAxnJ.png?ex=6573997a&is=6561247a&hm=5eeebe0d0c40aa9fd908a47e481377af72cc2564d45ef449e46dc396b3326433&)
+
+## Composición de la GAN
+La GAN se compone de dos bloques principales que son redes neuronales: el generador y el discriminador.
+
+## Función del Generador
+El generador tiene la tarea de "generar" objetos en formato STL que intentan replicar la forma de una cama.
+
+## Evaluación por el Discriminador
+Una vez que el generador crea un objeto, entra en juego el discriminador. Su función es determinar si el objeto generado es una cama o no.
+
+## Retroalimentación y Ajuste del Generador
+Si el discriminador decide que el objeto no es una cama, el generador actualiza sus pesos (ajusta su modelo interno) y vuelve a crear un objeto. Este proceso de retroalimentación se repite, con el generador intentando mejorar su capacidad de crear objetos que parezcan camas.
+
+## Entrenamiento del Discriminador
+Paralelamente, el discriminador se entrena con datos de un dataset. Este entrenamiento le permite mejorar su habilidad para calificar correctamente el trabajo del generador.
+
+## Conclusión del Entrenamiento
+El proceso de entrenamiento se considera completo cuando el generador crea objetos que el discriminador consistentemente califica como camas. En este punto, el generador está adecuadamente entrenado para crear objetos que se asemejan mucho o son idénticos a una cama.
+
+## Pseudocódigo:
+
+```python
+class Generador:
+    def __init__(self):
+        # Inicializar parámetros del generador
+
+    def generar_objeto(self):
+        # Generar un objeto en formato STL simulando una cama
+        return objeto
+
+    def actualizar_pesos(self, feedback):
+        # Actualizar los pesos del modelo basado en el feedback del discriminador
+
+class Discriminador:
+    def __init__(self, dataset):
+        # Inicializar parámetros del discriminador
+        self.dataset = dataset
+
+    def entrenar(self):
+        # Entrenar el discriminador con el dataset
+
+    def evaluar(self, objeto):
+        # Evaluar si el objeto generado por el generador es una cama
+        return es_cama
+
+# Inicialización
+generador = Generador()
+discriminador = Discriminador(dataset)
+
+# Proceso de entrenamiento
+entrenamiento_completo = False
+while not entrenamiento_completo:
+    objeto = generador.generar_objeto()
+    es_cama = discriminador.evaluar(objeto)
+
+    if not es_cama:
+        generador.actualizar_pesos(feedback="mejorar")
+    
+    discriminador.entrenar()
+
+    # Criterio para determinar si el entrenamiento está completo
+    if criterio_de_finalizacion_cumplido:
+        entrenamiento_completo = True
+
+# El generador ahora está entrenado para crear objetos que parecen camas
 
